@@ -5,7 +5,7 @@
 body {
   background: #b3dbe8;
   color: #000;
-  font-family: sans-serif; /*   add fonts   */
+  font-family: Mukta, "Lucida Grande", Geneva, sans-serif; /*   add fonts   */
 }
 
 
@@ -47,7 +47,7 @@ aside {
 
 h1, h2 {
   margin: 0;
-  font-family: serif; /*   add fonts   */
+  font-family: "Crimson Text", Georgia, "Palatino Linotype", serif; /*   add fonts   */
 }
 
 article h1 {
@@ -115,3 +115,22 @@ aside a:hover {
 
 
 /* put your media queries below */
+
+@media (max-width: 768px) {
+    body { margin: 0; }
+    #container {
+      border-width: 0;
+      display: block;
+      margin: 0;
+    }
+    article, aside {
+      width: 100%;
+      margin: 0;
+    }
+    #sidebar2 {
+      width: 100%;
+      margin: 0;
+    }
+    #top-image-container p { display: none; }
+    img { display: none; }
+}
